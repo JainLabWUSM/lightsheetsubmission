@@ -1,2 +1,0 @@
-# lightsheetsubmission
-Lightsheet_Submission
