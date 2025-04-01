@@ -1,0 +1,7 @@
+NetTracer3D_V1 was the earlier version of nettracer created and utilized for analysis in this experiment. It is less user-friendly and less broadly applicable than V2, so it was later updated to V2. V1 and V2 outputs are largely similar for their applications in this experiment, as they will essentially do the same thing under the right params.
+
+
+NetTracer3D_V1_5x - used for creating network of 5x images. 5x nodes must be predilated using 3D_dilator.py script, then prelabelled and split up,
+for example via watershedding. For this experiment, the imagej plugin morpholibj was used for watershedding.
+
+NetTracer3D_V1_20x - used for creating network of 20x images. Utilizes a downsample step midway through script execution that is designed to be done with FIJI. Essentially, midway through calculation, a nerve mask and glom mask are saved. They are they downsampled by 5 in all dimensions using the fiji scale algorithm. The output is thresholded for all nonzero values, essentially being generous for including downsampled objects, which aids in smushing any gaps in nerves back together. Because of this step, this script cannot be executed in python only so it won't run here. However, executing it on a PC will have it prompt the user for inputs (it does not have a main method - just execute it directly). A network excel file is created as an output.

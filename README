@@ -1,0 +1,29 @@
+Note - the included license file (Attribution-NonCommercial-ShareAlike 4.0 International) specifically pertains to NetTracer3D_V2. This code is open source and freely available to use/fork for specifically non-commercial purposes, assuming citation is provided. For now, this paper should be cited: https://doi.org/10.1101/2024.07.29.605633
+
+Scripts used for generating data in this paper https://doi.org/10.1101/2024.07.29.605633 are gathered here under the code tab. 
+
+The central algorithms for this experiment are the nettracers. This code capsule features an early version, NetTracer3D_V1, which was utilized until a more flexible and user-friendly version was developed, NetTracer3D_V2. Note both were utilized at points in this experiment with largely similar outputs due to the params used. See the readme files in each NetTracer3D folder for more information.
+
+The measuring_data folder features more scripts that were utilized for more generalized morphological analysis on the lightsheet images.
+
+The graphs_and_statistics folder has scripts that were used to graph data or run statstical analyses. Note that the stats.py file has a plethora of statistical methods that the user is prompted to choose from when running the script. Not all of which were used for analysis in this paper.
+
+Under data is a selection of largely downsampled data (to fit within code ocean memory limits). Note that analysis in the experiment was often done on images that were a lot less downsampled. Expect generally similar outputs for the 20x networks but other scripts in the measuring_data folder will be altered by the downsampling. Please see the V2 user manual in NetTracer3D_V2 folder for more documentation.
+
+Of the included scripts, the following data corresponds to each:
+
+Script to tabulated data guide (for supplemental tables):
+Supplemental Table 3 - From angle_extractor.py
+Supplemental Table 4 - From glom_grapher.py
+Supplemental Table 5 - From duct_grapher.py
+Supplemental Table 6 - From nerve_densities_5x.py
+Supplemental Table 7 - From nerve_densities_20x.py
+Supplemental Table 9 - From NetTracer3D_V2 package and/or NetTracer3D_V1_20x.py
+Supplemental Table 10 - From NetTracer3D_V2 package
+Supplemental Table 11 - From nerve_densities_5x.py (for bulk innervation information), convex_3D.py (for density information), counter.py (for counting glomeruli)
+Supplemental Table 13 - From NetTracer3D_V2 package and/or NetTracer3D_V1_5x.py
+Supplemental Table 14 - From nerve_desnities_2D.py
+Supplemental Table 15 - From cell_counter.py
+Supplemental Table 18 - From NetTracer3D_V2 package (specifically, morphology.py)
+
+Please utilize the reproducible run function for a set of sample outputs applied in the same way as analyses in the paper were conducted. I would highly recommend reading the main.py file's comments and checking the corresponding print outputs in the console when running main.py, for more information about the methods involved.
